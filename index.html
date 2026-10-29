@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LensLeaf | Discover the World in Images</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <header class="site-header">
+        <a href="#" class="logo" aria-label="LensLeaf home">
+            <span class="logo-icon">✳</span>
+            <span>LensLeaf</span>
+        </a>
+
+        <span class="header-note">A little inspiration, every day.</span>
+    </header>
+
+    <main class="container">
+
+        <!-- Introduction -->
+        <section class="hero">
+            <p class="eyebrow">YOUR VISUAL DISCOVERY SPACE</p>
+
+            <h1>Find the beauty<br>in <span>everything.</span></h1>
+
+            <p class="hero-description">
+                Explore ideas, discover places, and find images
+                that bring your imagination to life.
+            </p>
+
+            <!-- Search Form -->
+            <form id="searchForm" class="search-form">
+
+                <label for="searchInput" class="visually-hidden">
+                    Search for images
+                </label>
+
+                <span class="search-icon" aria-hidden="true">⌕</span>
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    name="query"
+                    placeholder="Try mountains, coffee, architecture..."
+                    autocomplete="off"
+                >
+
+                <button type="button" id="searchButton">
+                    Search <span aria-hidden="true">→</span>
+                </button>
+
+                <button type="button" id="clearButton" class="clear-button">
+                    Clear
+                </button>
+
+            </form>
+
+            <!-- Quick-Pick Category Chips -->
+            <div class="categories">
+                <span class="category-label">GET INSPIRED</span>
+
+                <button type="button" class="chip">🌿 Nature</button>
+                <button type="button" class="chip">🏙️ Cities</button>
+                <button type="button" class="chip">🐾 Wildlife</button>
+                <button type="button" class="chip">☕ Everyday</button>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section" aria-label="Image search results">
+
+            <div class="results-heading">
+                <div>
+                    <p class="eyebrow">YOUR COLLECTION</p>
+                    <h2>Explore gallery</h2>
+                </div>
+
+                <p id="resultCount" class="result-count">
+                    Your next discovery awaits
+                </p>
+            </div>
+
+            <!-- Keep this container empty for Part 1 -->
+            <div id="results" class="results-grid"></div>
+
+            <!-- Empty-State Message -->
+            <div id="emptyState" class="empty-state">
+                <div class="empty-illustration" aria-hidden="true">✳</div>
+
+                <h3>A world of images awaits</h3>
+
+                <p>
+                    Enter a topic above or choose an inspiration chip
+                    to start exploring.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>Made with curiosity and a little creativity.</p>
+        <p>© 2026 LensLeaf</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
